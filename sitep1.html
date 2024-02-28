@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jogos em Diversidade</title>
+<style>
+    .tab {
+        display: none;
+    }
+</style>
+</head>
+<body>
+    <div>
+        <h1>Aproveite Nosso Site</h1>
+    </div>
+      
+    <button onclick="abrirAba('tab1')">Jogos Casuais</button>
+    <button onclick="abrirAba('tab2')">Jogos Educativos</button>
+    <button onclick="abrirAba('tab3')">Redes Sociais</button>
+
+    <!-- Jogos Casuais -->
+    <div id="tab1" class="tab">
+        <h2>Jogos Casuais</h2>
+        <ul>
+            <li><a href="https://apkaward.com/dead-cells-mode" rel="noopener noreferrer">Dead Cells</a></li>
+            <li><a href="https://play.google.com/store/search?q=Free+fire&c=apps" rel="noopener noreferrer">Free Fire</a></li>
+            <!-- Adicione mais links conforme necessário -->
+        </ul>
+    </div>
+
+    <!-- Jogos Educativos -->
+    <div id="tab2" class="tab">
+        <h2>Jogos Educativos</h2>
+        <ul>
+            <li><a href="#" rel="noopener noreferrer">Nome do Jogo 3</a></li>
+            <li><a href="#" rel="noopener noreferrer">Nome do Jogo 4</a></li>
+            <!-- Adicione mais links conforme necessário -->
+        </ul>
+    </div>
+
+    <!-- Redes Sociais -->
+    <div id="tab3" class="tab">
+        <h2>Redes Sociais do Marreto</h2>
+        <ul>
+            <li><a href="#" rel="noopener noreferrer">Nome da Rede Social 5</a></li>
+            <li><a href="#" rel="noopener noreferrer">Nome da Rede Social 6</a></li>
+            <!-- Adicione mais links conforme necessário -->
+        </ul>
+    </div>
+
+    <script>
+    function abrirAba(nomeAba) {
+        var i;
+        var abas = document.getElementsByClassName("tab");
+        for (i = 0; i < abas.length; i++) {
+            abas[i].style.display = "none";
+        }
+        document.getElementById(nomeAba).style.display = "block";
+    }
+    </script>
+</body>
+</html>
+
+
+
+
+
